@@ -11,7 +11,6 @@ public class CadastroDeLivros {
         autor.email = "rodrigo.turini@caelum.com.br";
         autor.cpf = "123.456.789-10";
         
-        // Estamos dizendo que livro.autor está recebendo o objeto autor
         livro.autor = autor;
         
         livro.aplicaDescontoDe(0.1);
@@ -30,19 +29,9 @@ public class CadastroDeLivros {
         outroAutor.email = "paulo.silveira@caelum.com.br";
         outroAutor.cpf = "123.456.789-10";
 
-        // Estamos dizendo que outroLivro.autor está recebendo o objeto outroAutor
         outroLivro.autor = outroAutor;
 
         outroLivro.mostrarDetalhes();
-
-        // Métodos com parãmetros nada orientado a objetos
-        // livro.valor = 59.90;
-
-        // System.out.println("Valor atual: " + livro.valor);
-
-        // livro.valor -= livro.valor * 0.1;
-
-        // System.out.println("Valor com desconto: " + livro.valor);
 
         //----------------------------------------------
         Livro livro3 = new Livro();
