@@ -1,8 +1,8 @@
 public class Livro {
 
-    String nome;
+    private String nome;
     String descricao;
-    double valor;
+    private double valor;
     String isbn; // International Standard Book Number
     Autor autor; // Agora o livro tem um autor
 
@@ -24,7 +24,7 @@ public class Livro {
         System.out.println("-----");
 
         if (this.temAutor()) {
-            System.out.println("Esse é um método com return e possui o nome do autor: " + this.autor.nome);
+            System.out.println("Esse é um método com return e possui o nome do autor: " + this.retornaNome());
             System.out.println("-----");
         } else {
             System.out.println("Esse é um método com return e não possui o nome do autor");
@@ -32,7 +32,32 @@ public class Livro {
         }
     }
 
-    public void aplicaDescontoDe(double porcentagem) {
+    public boolean aplicaDescontoDe(double porcentagem) {
+
+        if (porcentagem > 0.3) {
+            return false;
+        }
         this.valor -= this.valor * porcentagem;
+        return true;
+
     }
+
+    // Isolando comportamento
+    void adicionarValor(double valor) {
+        this.valor += valor;
+    }
+
+    // Como esse método não recebe parametro, ele não precisa de this
+    double retornaValor() {
+        return valor;
+    }
+
+    void adicionarNome(String nome) {
+        this.nome = nome;
+    }
+
+    String retornaNome() {
+        return nome;
+    }
+
 }

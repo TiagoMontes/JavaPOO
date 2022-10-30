@@ -1,9 +1,9 @@
 public class CadastroDeLivros {
     public static void main(String[] args) {
         Livro livro = new Livro();
-        livro.nome = "Java 8 Prático";
+        livro.adicionarNome("Java 8 Prático");
         livro.descricao = "Novos recursos da linguagem";
-        livro.valor = 59.90;
+        livro.adicionarValor(59.90);
         livro.isbn = "978-85-66250-46-6";
         
         Autor autor = new Autor();
@@ -13,15 +13,15 @@ public class CadastroDeLivros {
         
         livro.autor = autor;
         
-        livro.aplicaDescontoDe(0.1);
+        livro.aplicaDescontoDe(0.3);
         livro.mostrarDetalhes();
 
         //----------------------------------------------
 
         Livro outroLivro = new Livro();
-        outroLivro.nome = "Logica da programação";
+        outroLivro.adicionarNome("Logica da Programação");
         outroLivro.descricao = "Crie seus primeiros programas";
-        outroLivro.valor = 59.90;
+        outroLivro.adicionarValor(59.90);
         outroLivro.isbn = "978-85-66250-22-0";
 
         Autor outroAutor = new Autor();
@@ -35,9 +35,9 @@ public class CadastroDeLivros {
 
         //----------------------------------------------
         Livro livro3 = new Livro();
-        livro3.nome = "O segredo da cabana";
+        livro3.adicionarNome("O segredo da cabana");
         livro3.descricao = "Um livro de auto ajuda pra sobreviver";
-        livro3.valor = 59.90;
+        livro3.adicionarValor(59.90);
         livro3.isbn = "978-85-66250-22-0";
 
         Autor autor3 = new Autor();
