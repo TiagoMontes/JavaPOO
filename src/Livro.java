@@ -15,10 +15,10 @@ public class Livro {
         String messageLivro = "Mostrando detalhes do livro ";
 
         System.out.println(messageLivro);
-        System.out.println("Nome: " + nome);
-        System.out.println("Descrição: " + descricao);
-        System.out.println("Valor: " + valor);
-        System.out.println("ISBN: " + isbn);
+        System.out.println("Nome desse maluco: " + nome);
+        System.out.println("Descrição desse maluco: " + descricao);
+        System.out.println("Valor dessa budega: " + valor);
+        System.out.println("ISBN (que diaxo é isso): " + isbn);
         System.out.println("-");
         autor.mostrarDetalhes();
         System.out.println("-----");
