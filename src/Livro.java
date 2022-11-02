@@ -34,6 +34,8 @@ public class Livro{
         System.out.println("-");
         autor.mostrarDetalhes();
         System.out.println("-----");
+        System.out.println("O nome deste ebook é " + this.getNome());
+
         if (this.impresso == true) {
             System.out.println("Este livro é impresso");
         } else {
@@ -47,6 +49,7 @@ public class Livro{
             System.out.println("Esse é um método com return e não possui o nome do autor");
             System.out.println("-----");
         }
+
     }
 
     public boolean aplicaDescontoDe(double porcentagem) {
@@ -111,6 +114,5 @@ public class Livro{
     void setImpresso(Boolean impresso) {
         this.impresso = impresso;
     }
-    
 
 }

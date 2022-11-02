@@ -11,11 +11,13 @@ public class CadastroDeLivros {
         livro.setDescricao("Novos recursos da linguagem");
         livro.setValor(59.90);
         livro.setImpresso(false);
+
+        Ebook ebook = new Ebook(autor);
+        ebook.setNome("Java 8 Prático"); // Como a classe Livro possui o atributo nome e o setter, não é necessário criar um novo atributo/setter na classe Ebook
+        ebook.setAutor(autor);
+        ebook.setDescricao("Novos recursos da linguagem");
         
-        livro.setAutor(autor);
-
-
-        livro.aplicaDescontoDe(0.14);
+        livro.aplicaDescontoDe(0.16);
         livro.mostrarDetalhes();
 
         //----------------------------------------------
