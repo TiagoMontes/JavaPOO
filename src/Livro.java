@@ -8,6 +8,7 @@ public class Livro{
 
     public Livro(Autor autor) {
         this.autor = autor;
+        this.isbn = "000-00-00000-00-0"; // Valor padrão
     }
 
     // Desta forma podemos criar o livro passando ou não um autor
