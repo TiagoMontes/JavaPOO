@@ -10,9 +10,12 @@ public class CadastroDeLivros {
         livro.setNome("Java 8 Prático");
         livro.setDescricao("Novos recursos da linguagem");
         livro.setValor(59.90);
+        livro.setImpresso(false);
         
         livro.setAutor(autor);
-        
+
+
+        livro.aplicaDescontoDe(0.14);
         livro.mostrarDetalhes();
 
         //----------------------------------------------
@@ -26,8 +29,9 @@ public class CadastroDeLivros {
         outroLivro.setNome("Logica da Programação");
         outroLivro.setDescricao("Crie seus primeiros programas");
         outroLivro.setValor(59.90);
+        outroLivro.setImpresso(true);
 
-
+        outroLivro.aplicaDescontoDe(0.3);
         outroLivro.setAutor(outroAutor);
 
         outroLivro.mostrarDetalhes();

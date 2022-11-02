@@ -5,10 +5,12 @@ public class Livro{
     private double valor;
     private String isbn; // International Standard Book Number
     private Autor autor; // Agora o livro tem um autor
+    private Boolean impresso;
 
     public Livro(Autor autor) {
         this.autor = autor;
         this.isbn = "000-00-00000-00-0"; // Valor padrão
+        this.impresso = true;
     }
 
     // Desta forma podemos criar o livro passando ou não um autor
@@ -32,6 +34,11 @@ public class Livro{
         System.out.println("-");
         autor.mostrarDetalhes();
         System.out.println("-----");
+        if (this.impresso == true) {
+            System.out.println("Este livro é impresso");
+        } else {
+            System.out.println("Este livro é digital");
+        }
 
         if (this.temAutor()) {
             System.out.println("Esse é um método com return e possui o nome do autor: " + this.autor.getNome());
@@ -46,9 +53,12 @@ public class Livro{
 
         if (porcentagem > 0.3) {
             return false;
+        } else if (!this.impresso && porcentagem > 0.15) {
+            return false;
+        } else {
+            this.valor -= this.valor * porcentagem;
+            return true;
         }
-        this.valor -= this.valor * porcentagem;
-        return true;
 
     }
 
@@ -92,6 +102,14 @@ public class Livro{
 
     void setAutor(Autor autor) {
         this.autor = autor;
+    }
+
+    Boolean getImpresso() {
+        return impresso;
+    }
+
+    void setImpresso(Boolean impresso) {
+        this.impresso = impresso;
     }
     
 
