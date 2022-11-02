@@ -1,10 +1,19 @@
-public class Livro {
+public class Livro{
 
     private String nome;
     private String descricao;
     private double valor;
     private String isbn; // International Standard Book Number
     private Autor autor; // Agora o livro tem um autor
+
+    public Livro(Autor autor) {
+        this.autor = autor;
+    }
+
+    // Desta forma podemos criar o livro passando ou não um autor
+    // public Livro() {
+
+    // }
 
     boolean temAutor() {
         boolean naoEhNull = this.autor.getNome() != null;
@@ -83,8 +92,6 @@ public class Livro {
     void setAutor(Autor autor) {
         this.autor = autor;
     }
-
-
     
 
 }
