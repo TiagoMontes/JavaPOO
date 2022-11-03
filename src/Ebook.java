@@ -19,7 +19,7 @@ public class Ebook extends Livro {
         if (porcentagem > 0.15) {
             return false;
         } else {
-            return super.aplicaDescontoDe(porcentagem);
+            return super.aplicaDescontoDe(porcentagem); // com Super eu chamo o método da classe pai
         }
     }
 
