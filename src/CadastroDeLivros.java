@@ -18,7 +18,7 @@ public class CadastroDeLivros {
         ebook.setValor(59.90);
         ebook.setDescricao("Novos recursos da linguagem");
         
-        ebook.aplicaDescontoDe(0.16);
+        ebook.aplicaDescontoDe(0.15);
         ebook.mostrarDetalhes();
 
         //----------------------------------------------

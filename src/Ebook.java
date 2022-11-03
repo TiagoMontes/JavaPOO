@@ -4,7 +4,6 @@ public class Ebook extends Livro {
 
     public Ebook(Autor autor) {
         super(autor);
-        this.impresso = false;
     }
 
     public void setWaterMark(String waterMark) {
@@ -20,8 +19,7 @@ public class Ebook extends Livro {
         if (porcentagem > 0.15) {
             return false;
         } else {
-            this.valor -= this.valor * porcentagem;
-            return true;
+            return super.aplicaDescontoDe(porcentagem);
         }
     }
 

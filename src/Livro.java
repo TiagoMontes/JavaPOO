@@ -2,10 +2,10 @@ public class Livro{
 
     private String nome;
     private String descricao;
-    protected double valor;
+    private double valor;
     private String isbn; // International Standard Book Number
     private Autor autor; // Agora o livro tem um autor
-    protected Boolean impresso;
+    private Boolean impresso;
 
     public Livro(Autor autor) {
         this.autor = autor;
