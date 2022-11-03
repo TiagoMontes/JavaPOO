@@ -4,6 +4,7 @@ public class Ebook extends Livro {
 
     public Ebook(Autor autor) {
         super(autor);
+        this.impresso = false;
     }
 
     public void setWaterMark(String waterMark) {
@@ -13,4 +14,15 @@ public class Ebook extends Livro {
     public String getWaterMark() {
         return waterMark;
     }
+
+    @Override // Sobrescrevendo o método da classe pai
+    public boolean aplicaDescontoDe(double porcentagem) {
+        if (porcentagem > 0.15) {
+            return false;
+        } else {
+            this.valor -= this.valor * porcentagem;
+            return true;
+        }
+    }
+
 }

@@ -2,10 +2,10 @@ public class Livro{
 
     private String nome;
     private String descricao;
-    private double valor;
+    protected double valor;
     private String isbn; // International Standard Book Number
     private Autor autor; // Agora o livro tem um autor
-    private Boolean impresso;
+    protected Boolean impresso;
 
     public Livro(Autor autor) {
         this.autor = autor;
@@ -55,8 +55,6 @@ public class Livro{
     public boolean aplicaDescontoDe(double porcentagem) {
 
         if (porcentagem > 0.3) {
-            return false;
-        } else if (!this.impresso && porcentagem > 0.15) {
             return false;
         } else {
             this.valor -= this.valor * porcentagem;
