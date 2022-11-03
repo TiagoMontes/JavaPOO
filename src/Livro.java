@@ -7,9 +7,9 @@ public class Livro{
     private Autor autor; // Agora o livro tem um autor
     private Boolean impresso;
 
-    public Livro(Autor autor) {
-        this.autor = autor;
-        this.isbn = "000-00-00000-00-0"; // Valor padrão
+    public Livro(Autor autor) { // Construtor
+        this.autor = autor; // O autor do livro é o autor passado como parâmetro
+        this.isbn = "000-00-00000-00-0"; // Valor padrão para o ISBN
         this.impresso = true;
     }
 
@@ -43,7 +43,7 @@ public class Livro{
         }
 
         if (this.temAutor()) {
-            System.out.println("Esse é um método com return e possui o nome do autor: " + this.autor.getNome());
+            System.out.println("Esse é um método com return e possui o nome do autor: " + this.autor.getNome()); // Acessando o atributo autor atravées do construtor e do método getNome()
             System.out.println("-----");
         } else {
             System.out.println("Esse é um método com return e não possui o nome do autor");
