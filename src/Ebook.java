@@ -19,8 +19,10 @@ public class Ebook extends Livro { // Herança - estamos dizendo que a classe Eb
         if (porcentagem > 0.15) {
             return false;
         } else {
+            double desconto = this.getValor() * porcentagem;
             System.out.println("Aplicando desconto no Ebook");
-            return super.aplicaDescontoDe(porcentagem); // com Super eu chamo o método da classe pai
+            this.setValor(this.getValor() - desconto);
+            return true;
         }
     }
 
