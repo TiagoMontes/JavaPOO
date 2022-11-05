@@ -1,5 +1,5 @@
 // uma classe é um tipo de dado
-public abstract class Livro{
+public abstract class Livro implements Produto{ // Agora a classe Livro é uma extensão da classe Produto, que é uma interface. Desta forma, a classe Livro é obrigada a implementar todos os métodos da interface Produto. A classe Livro também é obrigada a ser abstrata, pois uma interface não pode ser instanciada. Uma interface é um tipo de classe que contém apenas constantes e métodos abstratos.
 
     //Atributos - São as características do objeto
     private String nome;
@@ -54,7 +54,8 @@ public abstract class Livro{
 
     // Isolando comportamento
     // Métodos getters não recebem parâmetros
-    double getValor() {
+
+    public double getValor() {
         return valor;
     }
 

@@ -9,10 +9,10 @@ public class CadastroDeLivros {
 
 
         // Abaixo estamos criando um objeto do tipo LivroFisico - LivroFisico é um tipo de dado e fisico é um objeto - o parametro autor serve para passar o objeto autor para o construtor da classe LivroFisico já que o construtor da classe LivroFisico pede um objeto do tipo Autor
-        Livro livro = new LivroFisico(autor);
-        livro.setNome("Java 8 Prático - Fisico");
-        livro.setDescricao("Novos recursos da linguagem");
-        livro.setValor(59.90);
+        LivroFisico livroFisico = new LivroFisico(autor);
+        livroFisico.setNome("Java 8 Prático - Fisico");
+        livroFisico.setDescricao("Novos recursos da linguagem");
+        livroFisico.setValor(59.90);
 
 
         // Abaixo estamos criando um objeto do tipo Ebook - Ebook é um tipo de dado e ebook é um objeto
@@ -29,8 +29,8 @@ public class CadastroDeLivros {
         ebook.aplicaDescontoDe(0.15); // Estamos aplicando um desconto de 15% no objeto ebook
         ebook.mostrarDetalhes();
 
-        livro.aplicaDescontoDe(0.30); // Estamos aplicando um desconto de 30% no objeto livro
-        livro.mostrarDetalhes();
+        livroFisico.aplicaDescontoDe(0.30); // Estamos aplicando um desconto de 30% no objeto livro
+        livroFisico.mostrarDetalhes();
 
         miniLivro.aplicaDescontoDe(0.30); // Estamos aplicando um desconto de 30% no objeto miniLivro
         miniLivro.mostrarDetalhes();
