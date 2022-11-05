@@ -1,9 +1,11 @@
 public class Autor {
 
+    // Atributos da classe Autor
     private String nome;
     private String email;
     private String cpf;
 
+    // Métodos da classe Autor
     void mostrarDetalhes() {
         System.out.println("Mostrando detalhes do autor");
         System.out.println("Nome: " + nome);

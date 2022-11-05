@@ -1,15 +1,17 @@
+// uma classe é um tipo de dado
 public class Livro{
 
+    //Atributos - São as características do objeto
     private String nome;
     private String descricao;
     private double valor;
-    private String isbn; // International Standard Book Number
-    private Autor autor; // Agora o livro tem um autor
+    private String isbn;
+    private Autor autor; // Agora o livro tem um autor do tipo Autor
     private Boolean impresso;
 
-    public Livro(Autor autor) { // Construtor
-        this.autor = autor; // O autor do livro é o autor passado como parâmetro
-        this.isbn = "000-00-00000-00-0"; // Valor padrão para o ISBN
+    public Livro(Autor autor) { // Construtor - O construtor é um método que tem o mesmo nome da classe e não tem retorno. Ele é chamado quando instanciamos um objeto. O construtor é usado para inicializar os atributos do objeto.
+        this.autor = autor; // 
+        this.isbn = "000-00-00000-00-0";
         this.impresso = true;
     }
 
@@ -43,7 +45,7 @@ public class Livro{
         }
 
         if (this.temAutor()) {
-            System.out.println("Esse é um método com return e possui o nome do autor: " + this.autor.getNome()); // Acessando o atributo autor atravées do construtor e do método getNome()
+            System.out.println("Esse é um método com return e possui o nome do autor: " + this.autor.getNome()); // Acessando o atributo autor através do construtor Livro e o método getNome() da classe Autor
             System.out.println("-----");
         } else {
             System.out.println("Esse é um método com return e não possui o nome do autor");
@@ -52,19 +54,23 @@ public class Livro{
 
     }
 
+    // Este método EXIGE um retorno.
     public boolean aplicaDescontoDe(double porcentagem) {
 
         if (porcentagem > 0.3) {
             return false;
         } else {
             this.valor -= this.valor * porcentagem;
+            System.out.println("Aplicando desconto no Livro");
             return true;
         }
 
     }
 
+    // Getters serve para retornar o valor de um atributo, e Setter serve para alterar o valor de um atributo. Usamos o Getters e Setters para proteger os atributos da classe já que eles são privados.
+
     // Isolando comportamento
-    // Como esse método não recebe parametro, ele não precisa de this
+    // Métodos getters não recebem parâmetros
     double getValor() {
         return valor;
     }
