@@ -1,5 +1,5 @@
 // uma classe é um tipo de dado
-public abstract class Livro implements Produto{ // Agora a classe Livro é uma extensão da classe Produto, que é uma interface. Desta forma, a classe Livro é obrigada a implementar todos os métodos da interface Produto. A classe Livro também é obrigada a ser abstrata, pois uma interface não pode ser instanciada. Uma interface é um tipo de classe que contém apenas constantes e métodos abstratos.
+public abstract class Livro implements Produto{ // Agora a classe Livro é uma fez um contrato com a classe Produto, que é uma interface. Desta forma, a classe Livro é obrigada a implementar todos os métodos da interface Produto. A classe Livro também é obrigada a ser abstrata, pois uma interface não pode ser instanciada.
 
     //Atributos - São as características do objeto
     private String nome;
@@ -12,11 +12,6 @@ public abstract class Livro implements Produto{ // Agora a classe Livro é uma e
         this.autor = autor; // 
         this.isbn = "000-00-00000-00-0";
     }
-
-    // Desta forma podemos criar o livro passando ou não um autor
-    // public Livro() {
-
-    // }
 
     boolean temAutor() {
         boolean naoEhNull = this.autor.getNome() != null;
@@ -49,8 +44,6 @@ public abstract class Livro implements Produto{ // Agora a classe Livro é uma e
     // Este é um método abstrato, ou seja, não possui corpo, apenas a assinatura.
     // Apenas classes abstratas possuem métodos abstratos.
     public abstract boolean aplicaDescontoDe(double porcentagem);
-
-    // Getters serve para retornar o valor de um atributo, e Setter serve para alterar o valor de um atributo. Usamos o Getters e Setters para proteger os atributos da classe já que eles são privados.
 
     // Isolando comportamento
     // Métodos getters não recebem parâmetros
