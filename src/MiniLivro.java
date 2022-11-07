@@ -1,4 +1,4 @@
-public class MiniLivro extends Livro{
+public class MiniLivro extends Livro implements Promocional {
     
     public MiniLivro(Autor autor) {
         super(autor);

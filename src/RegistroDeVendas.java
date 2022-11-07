@@ -11,6 +11,7 @@ public class RegistroDeVendas {
         LivroFisico fisico = new LivroFisico(autor);
         fisico.setNome("Test-Driven Development - TDD");
         fisico.setValor(59.90);
+        fisico.aplicaDescontoDe15Porcento();
 
         
         Ebook ebook = new Ebook(autor);
@@ -20,12 +21,14 @@ public class RegistroDeVendas {
         
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
         
+        System.out.println("O valor do Livro Fisico com desconto é: " + fisico.getValor());
+
         // Método que adiciona um livro ao carrinho
         carrinho.adiciona(fisico);  
         carrinho.adiciona(ebook); 
 
-        System.out.println("Total: " + carrinho.getTotal());
 
+        System.out.println("O valor total é: " + carrinho.getTotal());
         // Como estamos imprimindo o objeto inteiro e não um de seus atributos, o comportamento padrão é mostrar o nome da classe mais um @codigoEstranho
     }
 }

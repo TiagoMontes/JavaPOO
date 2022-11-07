@@ -1,4 +1,4 @@
-public class LivroFisico extends Livro {
+public class LivroFisico extends Livro implements Promocional {
     
     // Estamos estendendo de Livro pois se fizessemos em Livro, Ebook estaria recebendo o método também, e não queremos isso ja que o Ebook não tem taxa de impressão
     
@@ -11,7 +11,7 @@ public class LivroFisico extends Livro {
         return this.getValor() * 0.05;
     }
 
-    @Override // Sobrescrevendo o método da classe pai
+    @Override
     public boolean aplicaDescontoDe(double porcentagem) {
         if (porcentagem > 0.30) {
             return false;

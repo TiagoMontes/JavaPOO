@@ -1,4 +1,4 @@
-public class Ebook extends Livro{ // Herança - estamos dizendo que a classe Ebook é uma extensão da classe Livro e assim, herda todos os atributos e métodos da classe Livro
+public class Ebook extends Livro implements Promocional{ // Herança - estamos dizendo que a classe Ebook é uma extensão da classe Livro e assim, herda todos os atributos e métodos da classe Livro. Extends possui uma semântica de "é um". Quando essa semântica não fizer sentido, não use herança.
 
     private String waterMark;
 
