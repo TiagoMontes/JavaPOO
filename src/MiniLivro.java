@@ -4,12 +4,9 @@ public class MiniLivro extends Livro implements Promocional {
         super(autor);
     }
 
-    public double getValor() {
-        return 0;
-    }
-
     @Override
     public boolean aplicaDescontoDe(double porcentagem) {
+        System.out.println("Não pode existir desconto");
         return false;
     }
 }

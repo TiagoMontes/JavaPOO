@@ -18,12 +18,19 @@ public class RegistroDeVendas {
         ebook.setNome("Object Oriented Programming - OOP");
         ebook.setValor(29.90);
 
+
+        MiniLivro miniLivro = new MiniLivro(autor);
+        miniLivro.setNome("O melhor mini livro do mundo");
+        miniLivro.setValor(29.90);
+        miniLivro.aplicaDesconto10Porcento();
+
         
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
         
         System.out.println("O valor do Livro Fisico com desconto é: " + fisico.getValor());
 
         // Método que adiciona um livro ao carrinho
+        carrinho.adiciona(miniLivro);
         carrinho.adiciona(fisico);  
         carrinho.adiciona(ebook); 
 

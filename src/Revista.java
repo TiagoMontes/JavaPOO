@@ -3,7 +3,7 @@ public class Revista implements Produto, Promocional {
     private String nome;
     private String descricao;
     private double valor;
-    private String editora;
+    private Editora editora;
 
     // Setters e Getters
     String getNome() {
@@ -26,11 +26,11 @@ public class Revista implements Produto, Promocional {
         this.valor = valor;
     }
 
-    String getEditora() {
+    Editora getEditora() {
         return editora;
     }
 
-    void setEditora(String editora) {
+    void setEditora(Editora editora) {
         this.editora = editora;
     }
 
