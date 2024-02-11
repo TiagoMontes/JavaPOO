@@ -1,24 +1,22 @@
-public class Autor {
+public class Author {
 
-    // Atributos da classe Autor
-    private String nome;
+    private String name;
     private String email;
     private String cpf;
 
-    // Métodos da classe Autor
-    void mostrarDetalhes() {
+    void showDetails() {
         System.out.println("Mostrando detalhes do autor");
-        System.out.println("Nome: " + nome);
+        System.out.println("Nome: " + name);
         System.out.println("Email: " + email);
         System.out.println("CPF: " + cpf);
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmail() {

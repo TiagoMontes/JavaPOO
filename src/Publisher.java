@@ -1,4 +1,4 @@
-public class Editora {
+public class Publisher {
     
     private String nomeFantasia;
     private String razaoSocial;
