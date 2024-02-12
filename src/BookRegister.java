@@ -1,3 +1,8 @@
+import Class.Author;
+import Class.Ebook;
+import Class.MiniBook;
+import Class.PrintBook;
+
 public class BookRegister {
     public static void main(String[] args) {
         Author author = new Author();

@@ -1,4 +1,7 @@
-public abstract class Book implements Product{
+package Class;
+import Interface.Product;
+
+public abstract class Book implements Product {
 
     private String name;
     private String description;
@@ -11,11 +14,11 @@ public abstract class Book implements Product{
         this.isbn = "000-00-00000-00-0";
     }
 
-    boolean hasAuthor() {
+    public boolean hasAuthor() {
         return this.author.getName() != null;
     }
 
-    void  showDetails() {
+    public void  showDetails() {
         System.out.println("Mostrando detalhes do livro ");
         System.out.println("Nome: " + name);
         System.out.println("Descrição: " + description);
@@ -41,7 +44,7 @@ public abstract class Book implements Product{
         return value;
     }
 
-    void setValue(double value)
+    public void setValue(double value)
     {
         this.value = value;
     }
@@ -50,31 +53,31 @@ public abstract class Book implements Product{
         return name;
     }
 
-    void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    String getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    void setDescription(String description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
-    String getIsbn() {
+    public String getIsbn() {
         return isbn;
     }
 
-    void setIsbn(String isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
 
-    Author getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
-    void setAuthor(Author author) {
+    public void setAuthor(Author author) {
         this.author = author;
     }
 

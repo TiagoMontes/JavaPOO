@@ -1,3 +1,5 @@
+import Class.*;
+
 public class SalesLog {
     
     public static void main(String[] args) {

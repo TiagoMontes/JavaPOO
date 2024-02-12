@@ -1,3 +1,6 @@
+package Class;
+import Interface.Promotional;
+
 public class PrintBook extends Book implements Promotional {
 
     public PrintBook(Author author) {

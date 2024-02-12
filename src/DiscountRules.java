@@ -1,3 +1,8 @@
+import Class.Author;
+import Class.Book;
+import Class.Ebook;
+import Class.PrintBook;
+
 public class DiscountRules {
     
     public static void main(String[] args) {

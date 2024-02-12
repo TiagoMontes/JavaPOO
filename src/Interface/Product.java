@@ -1,3 +1,5 @@
+package Interface;
+
 @FunctionalInterface
 public interface Product {
     

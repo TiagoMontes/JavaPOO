@@ -1,3 +1,7 @@
+package Class;
+
+import Interface.Product;
+
 public class ShoppingCart {
     
     private double total;

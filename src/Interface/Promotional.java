@@ -1,5 +1,7 @@
+package Interface;
+
 @FunctionalInterface
-interface Promotional {
+public interface Promotional {
 
     boolean applyDiscount(double percentage);
 

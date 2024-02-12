@@ -1,4 +1,7 @@
-public class Ebook extends Book implements Promotional{
+package Class;
+import Interface.Promotional;
+
+public class Ebook extends Book implements Promotional {
     private String waterMark;
 
     public Ebook(Author author) {
@@ -11,7 +14,7 @@ public class Ebook extends Book implements Promotional{
             return false;
         } else {
             double discount = this.getValue() * percentage;
-            System.out.println("Aplicando desconto no Ebook");
+            System.out.println("Aplicando desconto no Entity.Ebook");
             this.setValue(this.getValue() - discount);
             return true;
         }

@@ -1,3 +1,7 @@
+package Class;
+
+import Interface.Promotional;
+
 public class MiniBook extends Book implements Promotional {
 
     public MiniBook(Author author) {
