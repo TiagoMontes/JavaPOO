@@ -1,3 +1,7 @@
+package Class;
+import Interface.Product;
+import Interface.Promotional;
+
 public class Magazine implements Product, Promotional {
     
     private String name;
